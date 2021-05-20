@@ -6,19 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jquery Ajax</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'KoHo', sans-serif;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="container">
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <p class="title">Consulta CEP 🔍</p>
+            <p class="subtitle">Consulta Rápida por CEP 🚀</p>
+        </div>
+    </section>
+
+    <div class="container mt-6">
         <div class="columns is-multiline">
             <div class="column is-6 is-offset-3 panel mt-4">
-                <input type="text" id="cepDigitado" class="input mt-3" placeholder="Digite aqui o CPF">
+                <input type="number" id="cepDigitado" class="input mt-3" maxlength="8" placeholder="Digite aqui o CPF">
                 <button class="button is-primary mt-3">Consultar CEP</button>
             </div>
-            <div class="column is-10 is-offset-1">
+            <div class="column is-12">
                 <div class="card">
                     <div class="card-content">
-                        <table class="table is-bordered is-striped is-fullwidth">
+                        <table class="table is-striped is-fullwidth">
                             <thead>
                                 <tr>
                                     <th>CEP</th>

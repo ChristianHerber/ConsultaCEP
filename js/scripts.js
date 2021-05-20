@@ -1,5 +1,6 @@
 function consultaCep(){
     let cepDigitado = document.querySelector('#cepDigitado').value
+    if(cepDigitado == ''){ alert('Necessário Digitar um CEP Válido!') }
     $.ajax({
         url: `https://viacep.com.br/ws/${cepDigitado}/json/`,
         type: "get",
