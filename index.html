@@ -11,11 +11,45 @@
 
     <div class="container">
         <div class="columns is-multiline">
-            <div class="column is-6 is-offset-3">
-                <input type="text" id="cep" class="input mt-3" placeholder="Digite aqui o CPF">
+            <div class="column is-6 is-offset-3 panel mt-4">
+                <input type="text" id="cepDigitado" class="input mt-3" placeholder="Digite aqui o CPF">
                 <button class="button is-primary mt-3">Consultar CEP</button>
             </div>
-            <p id="logradouro"></p>
+            <div class="column is-10 is-offset-1">
+                <div class="card">
+                    <div class="card-content">
+                        <table class="table is-bordered is-striped is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th>CEP</th>
+                                    <th>Localidade</th>
+                                    <th>UF</th>
+                                    <th>IBGE</th>
+                                    <th>Logradouro</th>
+                                    <th>Complemento</th>
+                                    <th>Bairro</th>
+                                    <th>GIA</th>
+                                    <th>SIAFI</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="cep"></td>
+                                    <td id="localidade"></td>
+                                    <td id="uf"></td>
+                                    <td id="ibge"></td>
+                                    <td id="logradouro"></td>
+                                    <td id="complemento"></td>
+                                    <td id="bairro"></td>
+                                    <td id="gia"></td>
+                                    <td id="siafi"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     
