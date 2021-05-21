@@ -24,7 +24,7 @@
     </section>
 
     <div class="container mt-6">
-        <div class="columns is-multiline">
+        <div class="columns is-multiline is-mobile">
             <div class="column is-6 is-offset-3 panel mt-4">
                 <input type="number" id="cepDigitado" class="input mt-3" maxlength="8" placeholder="Digite aqui o CEP">
                 <small class="has-text-info">👉 Digite apenas <strong>números</strong></small>
@@ -34,34 +34,36 @@
             <div class="column is-12 is-hidden" id="tabela">
                 <div class="card">
                     <div class="card-content">
-                        <table class="table is-striped is-fullwidth">
-                            <thead>
-                                <tr>
-                                    <th>CEP</th>
-                                    <th>Localidade</th>
-                                    <th>UF</th>
-                                    <th>IBGE</th>
-                                    <th>Logradouro</th>
-                                    <th>Complemento</th>
-                                    <th>Bairro</th>
-                                    <th>GIA</th>
-                                    <th>SIAFI</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td id="cep"></td>
-                                    <td id="localidade"></td>
-                                    <td id="uf"></td>
-                                    <td id="ibge"></td>
-                                    <td id="logradouro"></td>
-                                    <td id="complemento"></td>
-                                    <td id="bairro"></td>
-                                    <td id="gia"></td>
-                                    <td id="siafi"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-container">
+                            <table class="table is-striped is-fullwidth">
+                                <thead>
+                                    <tr>
+                                        <th>CEP</th>
+                                        <th>Localidade</th>
+                                        <th>UF</th>
+                                        <th>IBGE</th>
+                                        <th>Logradouro</th>
+                                        <th>Complemento</th>
+                                        <th>Bairro</th>
+                                        <th>GIA</th>
+                                        <th>SIAFI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="cep"></td>
+                                        <td id="localidade"></td>
+                                        <td id="uf"></td>
+                                        <td id="ibge"></td>
+                                        <td id="logradouro"></td>
+                                        <td id="complemento"></td>
+                                        <td id="bairro"></td>
+                                        <td id="gia"></td>
+                                        <td id="siafi"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
