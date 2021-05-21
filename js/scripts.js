@@ -1,8 +1,9 @@
 function consultaCep(){
     let cepDigitado = document.querySelector('#cepDigitado').value
-    if(cepDigitado == ''){ alert('Necessário Digitar um CEP Válido!') }
+    if(cepDigitado == ''){ alert('Necessário Digitar um CEP Válido!'); var invalido = true}
 
     $("#tabela").removeClass("is-hidden")
+    $(".progress").removeClass("is-hidden")
 
     $.ajax({
         url: `https://viacep.com.br/ws/${cepDigitado}/json/`,
@@ -28,6 +29,12 @@ function consultaCep(){
             bairro.innerHTML = response.bairro
             gia.innerHTML = response.gia
             siafi.innerHTML = response.siafi
+
+            $(".progress").addClass("is-hidden")
+        },
+        error: function(){
+            $("#tabela").addClass("is-hidden")
+            $(".progress").addClass("is-hidden")
         }
     })
 }

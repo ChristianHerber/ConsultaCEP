@@ -27,7 +27,9 @@
         <div class="columns is-multiline">
             <div class="column is-6 is-offset-3 panel mt-4">
                 <input type="number" id="cepDigitado" class="input mt-3" maxlength="8" placeholder="Digite aqui o CEP">
-                <button class="button is-primary mt-3">Consultar CEP</button>
+                <small class="has-text-info">👉 Digite apenas <strong>números</strong></small>
+                <button class="button is-primary mt-3 is-fullwidth">Consultar CEP</button>
+                <progress class="progress is-small is-primary mt-3 is-hidden" max="100">15%</progress>
             </div>
             <div class="column is-12 is-hidden" id="tabela">
                 <div class="card">
@@ -63,7 +65,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
     
